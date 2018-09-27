@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <script src="javascript/echarts.js"></script>
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    table{
+        border: 1px black solid;
+    }
+    th{
+        width: 10em;
+    }
+    td{
+        text-align: center;
+    }
+    div{
+        margin: 5% 0;
+    }
+</style>
+
+<body>
+
+<div>
+    <span>添加URL</span>
+    <input type="text" value="10.254.174.153">
+    <button onclick="add()">+</button>
+</div>
+
+<div>
+    <table>
+        <tr>
+            <th>URL</th>
+            <th>CPU利用率</th>
+            <th>实时</th>
+            <th>删除</th>
+        </tr>
+    </table>
+</div>
+
+
+<div id="container" style="height:400px; width: 2000px"></div>
+
+<script src="javascript/Drawing.js"></script>
+
+</body>
+</html>
+
+<!--10.254.174.25-->
